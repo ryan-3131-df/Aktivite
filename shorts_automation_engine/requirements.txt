@@ -1,0 +1,15 @@
+# Shorts Automation Engine - Python dependencies (Python >= 3.10)
+# System requirement: FFmpeg (ffmpeg + ffprobe on PATH). Run `python check_system.py`.
+
+anthropic>=2.10              # Claude API: script + metadata generation (structured outputs, vision)
+moviepy>=2.1,<3              # compositor (MoviePy 2.x API)
+numpy>=1.26
+pillow>=10.1                 # caption / badge / HUD rendering
+opencv-python-headless>=4.9  # sub-pixel Ken Burns warps
+pydantic>=2.6
+requests>=2.31               # ElevenLabs + Pexels REST calls
+python-dotenv>=1.0
+
+# Recommended (the pipeline degrades gracefully without them)
+faster-whisper>=1.1          # local Whisper word-level timestamps
+yt-dlp>=2025.1.1             # Creative-Commons YouTube fallback for footage

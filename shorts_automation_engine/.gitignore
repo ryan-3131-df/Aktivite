@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+cache/
+output/*
+!output/.gitkeep
+input_clips/*
+!input_clips/.gitkeep
+!input_clips/README.md
+*.part
